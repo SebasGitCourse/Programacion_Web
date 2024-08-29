@@ -1,0 +1,345 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    /* border: solid black 5px; */
+}
+
+#div-primeraFila, #div-segundaFila {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+}
+#div-primeraFila {
+    /* border: solid blue 2px; */
+    background-color: rgba(228, 228, 228, 0.332);
+    height: 5vh;
+}
+
+#div-segundaFila {
+    height: 10vh;
+    /* border: solid red 2px; */
+}
+
+#div-img-jordan, #div-img-nike1 {
+    /* border: solid 1px green; */
+    width: 25px;
+    height: 25px;
+    background-size: 100% 100%;
+}
+
+#div-img-jordan {
+    background-image: url("https://cdn.icon-icons.com/icons2/3912/PNG/512/jordan_logo_icon_247957.png");
+    margin: 0% 0% 0% 3%;
+}
+
+#div-img-nike1 {
+    background-image: url("https://1000marcas.net/wp-content/uploads/2019/11/2004-Carmelo-Anthony.png");
+    margin: 0% 0% 0% 2%;
+}
+
+#div-linksPrimerFila {
+    /* border: solid 2px yellow; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    margin: 0% 3% 0% 1% ;
+    gap: 10px;
+}
+
+.link {
+    color: rgb(49, 49, 49);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    border-right: solid 1px black;
+    /* border: solid 2px red; */
+    padding: 0 10px 0 10px;
+    text-decoration: none; /*Evitar subrayado*/
+}
+
+#link-final {
+    border-right: none;
+}
+
+#div-img-nike2 {
+    width: 90px;
+    height: 60px;
+    background-image: url("https://www.brandemia.org/wp-content/uploads/2011/09/logo_nike_principal.jpg");
+    background-size: 100% 100%;
+    margin: 0% 0% 0% 2%;
+}
+
+#div-secciones {
+    /* border: solid 2px orange; */
+    width: 70%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 0% 0% 7%;
+}
+
+.linkSeccion {
+    color: black;
+    text-align: center;
+    padding: 1%;
+    /* border: solid 2px red; */
+    text-decoration: none;
+    font-family: fantasy;
+}
+
+#div-busquedaYOtros {
+    /* border: solid 2px rgb(0, 255, 26); */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-wrap: stable;
+    width: 25%;
+    height: 10vh;
+}
+
+#Buscar {
+    border: none;
+    margin: 1% 5% 1% 1%;
+    border-radius: 15px;
+    width: 52%;
+    height: 5vh;
+    background-color: rgba(71, 71, 71, 0.104);
+}
+
+#Buscar::placeholder{
+    padding-left: 15px;
+}
+
+
+.iconos-Segunda-Fila-Derecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: rgba(71, 71, 71, 0.104);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+}
+
+.iconos-Segunda-Fila-Derecha img {
+    width: 20px;
+    height: 20px;
+    /* transition: transform 0.3s ease; Añade una transición suave */
+}
+
+/* Efecto al pasar el mouse por encima */
+.iconos-Segunda-Fila-Derecha img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño de la imagen al pasar el mouse por encima */
+}
+
+#div-img-Nike3 img {
+    width: 100%;
+    height: 100%;
+}
+
+#shop1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    /* border: solid 2px red; */
+}
+
+#h1-shop{
+    padding: 2% 0% 1% 0%;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 70px;
+    font-family: fantasy;
+}
+
+#h4-shop {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(20, 20, 20, 0.892);
+    margin: 0% 0% 1.8% 0%;
+}
+
+#shop2 {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    margin: 0 0 2% 0;
+}
+
+/* Grid-container*/
+
+.grid-container {
+    /* border: solid 5px green; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+}
+
+.grid-item {
+    display: flex;
+    align-items: flex-end;
+    /* border: solid 5px red; */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;/*Oculta el contenido que se salga del area del elemento.*/
+    height: 500px;
+}
+
+.description {
+    margin: 5%;
+    color: white;
+    /* border: solid 5px yellow; */
+}
+
+.description h2 {
+    padding: 0 0 20px 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.description p {
+    padding: 0 0 20px 0;
+    font-size: 18px;
+}
+
+.shop-btn {
+    padding: 10px 30px;
+    background-color: black;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/*Evento mouse*/
+.shop-btn:hover, #shop4:hover, #shop2:hover {
+    background-color: lightgreen;
+}
+
+#shop3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    /* border: solid 2px red; */
+}
+
+#h3-shop{
+    padding: 4% 0% 2% 0%;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: fantasy;
+}
+
+#shop4 {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    margin: 0 0 4% 0;
+}
+
+#div-img-nike4 {
+    width: 100%;
+    height: 720px;
+    background-position: center;
+    background-size: cover;
+}
+
+#Shop-By-Classics {
+    /* border: solid 5px green; */
+}
+
+#Shop-By-Classics h1 {
+    margin: 6% 0 2% 4%;
+    font-family: fantasy;
+    font-size: 1.2cm;
+    font-weight: bolder;
+}
+
+#div-grid-zapatos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1cm;
+}
+
+.zapato {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    min-height: 300px;
+    border-radius: 15px;
+    animation: borderColor 4s infinite;
+}
+
+@keyframes borderColor {
+    0% {
+        border: double 5px yellow;
+    }
+    25% {
+        border: double 5px blue;
+    }
+    50%{
+        border: double 5px red;
+    }
+    75%{
+        border: double 5px greenyellow;
+    }
+    100%{
+        border: double 5px goldenrod;
+    }
+}
+
+#div-classics {
+    display: flex;
+    justify-content: center;
+    /* border: solid 5px blue; */
+    gap: 2cm;
+}
+
+.title-Classics {
+    margin: 6% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: solid 5px goldenrod; */
+}
+
+.title-Classics h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.title-Classics a {
+    margin-top: 25px;
+    text-decoration: none;
+    color: gray;
+}
